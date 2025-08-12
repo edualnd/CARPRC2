@@ -23,6 +23,8 @@ public class MainApp {
             System.out.println("------------------------------");
         }
         ContaCorrente contaEscolhida = null;
+        int ent;
+        System.out.println("O que deseja: ");
         do{
             System.out.println("Escolha a conta para efetuar as operações, e digite seu numero");
             int numero = sc.nextInt();
