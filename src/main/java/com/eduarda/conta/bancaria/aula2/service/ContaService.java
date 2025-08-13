@@ -18,7 +18,7 @@ public class ContaService {
     }
 
     public List<ContaCorrente> lerDados(){
-        Path caminho = Paths.get("src/com/eduarda/conta/bancaria/aula2/doc/conta.txt");
+        Path caminho = Paths.get("src/main/java/com/eduarda/conta/bancaria/aula2/doc/conta.txt");
         List<String> linhas = null;
         try {
             linhas = Files.readAllLines(caminho);
@@ -60,7 +60,7 @@ public class ContaService {
 
     }
     public void salvarDadosAtualizados(ContaCorrente c) {
-        Path caminho = Paths.get("src/com/eduarda/conta/bancaria/aula2//doc/conta_atualizada.txt");
+        Path caminho = Paths.get("src/main/java/com/eduarda/conta/bancaria/aula2/doc/conta_atualizada.txt");
         String dadosAtualizados =  c.getNumero() + ","
                 + c.getTitular() + ","
                 + c.getSaldo() + "\n";
